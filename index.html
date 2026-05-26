@@ -1,214 +1,538 @@
+```html
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Auto Video Maker - Laptop Kaise Banate Hain (5:30 Min MP4)</title>
-    <meta name="description" content="Generate a professional 5 minute 30 second Hindi video on 'How to make a laptop'. Free MP4 video generator with AI script and visuals.">
-    <meta name="google-site-verification" content="VERIFICATION_CODE_HERE" />
-    <link rel="canonical" href="https://your-domain.pages.dev/" />
-
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box;}
-        body{
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            overflow-x: hidden;
-        }
-        .container{
-            text-align: center;
-            max-width: 800px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.03);
-            padding: 40px 20px;
-            border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-        }
-        h1{
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            background: linear-gradient(to right, #60a5fa, #a855f7, #ec4899);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 15px;
-            font-weight: 900;
-            letter-spacing: -1px;
-        }
-        .status{
-            font-size: 1.1rem;
-            margin: 25px 0;
-            padding: 25px;
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 15px;
-            border: 1px solid rgba(96, 165, 250, 0.3);
-            min-height: 90px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.5s ease;
-            color: #cbd5e1;
-            line-height: 1.6;
-        }
-        .buttons{
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 30px;
-        }
-        button{
-            padding: 16px 35px;
-            font-size: 1.1rem;
-            border: none;
-            border-radius: 12px;
-            cursor: pointer;
-            font-weight: 700;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .generate{
-            background: #2563eb;
-            color: #fff;
-            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
-        }
-        .generate:hover:not(:disabled){
-            background: #1d4ed8;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.5);
-        }
-        .download{
-            background: #10b981;
-            color: #fff;
-            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
-        }
-        .download:hover:not(:disabled){
-            background: #059669;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
-        }
-        button:disabled{
-            opacity: 0.4;
-            cursor: not-allowed;
-            filter: grayscale(1);
-        }
-        .progress-container{
-            width: 100%;
-            height: 12px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            margin: 20px 0;
-            display: none;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-        .progress-bar{
-            height: 100%;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-            width: 0%;
-            transition: width 0.4s ease;
-        }
-        .info-tag {
-            display: inline-block;
-            background: rgba(96, 165, 250, 0.1);
-            color: #60a5fa;
-            padding: 5px 15px;
-            border-radius: 100px;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-            border: 1px solid rgba(96, 165, 250, 0.2);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>Cashoo Service | India's Most Trusted Companion Platform</title>
+  <meta name="description" content="Cashoo Service – India's #1 premium companion platform. Verified profiles, real connections, 100% privacy. 18+ only.">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: #000000; font-family: 'Inter', sans-serif; color: #fff; overflow-x: hidden; }
+    /* 3D Glassmorphism */
+    .glass-card {
+      background: rgba(15, 15, 30, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 215, 0, 0.4);
+      border-radius: 2rem;
+      transition: all 0.3s ease;
+    }
+    .glass-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 30px -10px rgba(255, 215, 0, 0.2);
+      border-color: #ffd700;
+    }
+    .btn-gold {
+      background: linear-gradient(135deg, #ffd700, #ffb347);
+      color: #000;
+      font-weight: 800;
+      padding: 0.6rem 1.8rem;
+      border-radius: 2rem;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+    }
+    .btn-gold:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+    }
+    .telegram-3d {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #0088cc;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      z-index: 1500;
+      transition: 0.3s;
+      cursor: pointer;
+      transform: rotate(0deg);
+    }
+    .telegram-3d:hover {
+      transform: scale(1.1) rotate(5deg);
+      background: #006699;
+    }
+    .swiper-slide {
+      overflow-y: auto;
+      padding-bottom: 2rem;
+    }
+    .swiper-pagination-bullet {
+      width: 40px !important;
+      height: 4px !important;
+      border-radius: 4px !important;
+      background: #cbd5e1 !important;
+      opacity: 1 !important;
+    }
+    .swiper-pagination-bullet-active {
+      background: #ffd700 !important;
+      width: 60px !important;
+    }
+    input, select, textarea {
+      background: #111;
+      border: 1px solid #ffd700;
+      border-radius: 1rem;
+      padding: 0.6rem 1rem;
+      color: white;
+      width: 100%;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #ffaa00;
+      box-shadow: 0 0 10px #ffd700;
+    }
+    .ad-card {
+      background: linear-gradient(145deg, #0f0f1f, #05050f);
+      border-radius: 1.5rem;
+      overflow: hidden;
+      transition: 0.3s;
+      border: 1px solid #ffd70030;
+    }
+    .ad-card:hover {
+      transform: translateY(-6px);
+      border-color: #ffd700;
+      box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+    }
+    .toast {
+      position: fixed;
+      bottom: 100px;
+      left: 20px;
+      right: 20px;
+      background: #ffd700;
+      color: #000;
+      padding: 12px;
+      border-radius: 40px;
+      text-align: center;
+      z-index: 2000;
+      display: none;
+      font-weight: bold;
+    }
+    @media (max-width: 640px) {
+      .swiper-button-next, .swiper-button-prev { display: none; }
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #ffd700, #ff8c00, #ff0066);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: 800;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="info-tag">AI Powered MP4 Engine</div>
-        <h1>🤖 Auto Video Maker</h1>
-        <p style="font-size:1.2rem; color: #94a3b8; margin-bottom:10px;">Topic: "Laptop Kaise Banate Hain"</p>
-        <p style="font-size:1rem; color: #64748b; margin-bottom:30px;">Hindi Language | 5:30 Duration | HD Quality</p>
+<div id="toastMsg" class="toast"></div>
+<a href="https://t.me/cashooservice" target="_blank" class="telegram-3d"><i class="fab fa-telegram-plane"></i></a>
 
-        <div class="status" id="status">🚀 System Ready. Click 'Generate' to start encoding the 5:30 min video.</div>
-        
-        <div class="progress-container" id="progressContainer">
-            <div class="progress-bar" id="progressBar"></div>
-        </div>
+<!-- Header -->
+<div class="sticky top-0 z-20 bg-black/90 backdrop-blur-md border-b border-yellow-500/40">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <i class="fas fa-crown text-3xl text-yellow-500"></i>
+      <span class="text-3xl font-extrabold gradient-text">Cashoo Service</span>
+      <span class="text-xs bg-yellow-800 px-2 py-0.5 rounded-full">18+ Premium</span>
+    </div>
+    <div class="flex gap-3">
+      <span id="userStatus" class="text-sm"></span>
+      <button id="loginBtn" class="text-sm bg-gray-800 px-3 py-1 rounded-full">Login</button>
+      <button id="logoutBtn" class="text-sm bg-gray-800 px-3 py-1 rounded-full hidden">Logout</button>
+    </div>
+  </div>
+</div>
 
-        <div class="buttons">
-            <button class="generate" id="genBtn" onclick="generateVideo()">
-                <span>🎥</span> Generate Video
-            </button>
-            <button class="download" id="downloadBtn" onclick="downloadVideo()" disabled>
-                <span>💾</span> Download MP4 (52MB)
-            </button>
+<!-- Swiper 8-Page Slider (horizontal swipe) -->
+<div class="swiper mySwiper h-screen max-h-[85vh] mt-2">
+  <div class="swiper-wrapper">
+    <!-- PAGE 1 – HERO (exactly like the image) -->
+    <div class="swiper-slide overflow-y-auto p-4">
+      <div class="max-w-5xl mx-auto mt-12 text-center">
+        <h1 class="text-7xl font-extrabold gradient-text">Elite Companion</h1>
+        <p class="text-2xl text-gray-300 mt-4">SIMPLE, RELIABLE, VERIFIED</p>
+        <p class="text-lg text-gray-400 mt-2">Find elite companions in your city. Trusted by thousands.</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-10">
+          <div class="glass-card p-5"><i class="fas fa-shield-alt text-4xl text-yellow-500"></i><p class="font-bold mt-2">Verified Profiles</p></div>
+          <div class="glass-card p-5"><i class="fas fa-eye text-4xl text-yellow-500"></i><p class="font-bold mt-2">100% Real</p></div>
+          <div class="glass-card p-5"><i class="fas fa-clock text-4xl text-yellow-500"></i><p class="font-bold mt-2">24/7 Support</p></div>
+          <div class="glass-card p-5"><i class="fas fa-lock text-4xl text-yellow-500"></i><p class="font-bold mt-2">Privacy Safe</p></div>
         </div>
+        <div class="flex justify-center gap-5 mt-10">
+          <button class="btn-gold text-xl px-8 py-3" id="exploreBtn">Browse Ads →</button>
+          <button class="bg-white/10 border border-yellow-500 px-6 py-3 rounded-full text-lg" id="postAdHeroBtn">Post Your Ad</button>
+        </div>
+      </div>
     </div>
 
-    <script>
-        let isGenerating = false;
+    <!-- PAGE 2 – Location Selector (States, Districts, Cities) -->
+    <div class="swiper-slide overflow-y-auto p-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold gradient-text text-center mb-6">📍 Choose Your Location</h2>
+        <div class="glass-card p-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <select id="stateSelect" class="bg-black"><option value="">Select State</option></select>
+            <select id="districtSelect" class="bg-black" disabled><option>Select District</option></select>
+            <select id="citySelect" class="bg-black" disabled><option>Select City</option></select>
+          </div>
+          <button id="applyLocationBtn" class="btn-gold w-full mt-5">🔍 Search Ads in this Location</button>
+        </div>
+        <div class="mt-8 text-center text-gray-400">Select your city to see nearby companions</div>
+      </div>
+    </div>
 
-        async function generateVideo() {
-            if (isGenerating) return;
-            isGenerating = true;
+    <!-- PAGE 3 – Featured Listings -->
+    <div class="swiper-slide overflow-y-auto p-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-wrap justify-between items-center gap-3 mb-5">
+          <h2 class="text-4xl font-bold gradient-text">✨ Featured Companions</h2>
+          <input type="text" id="searchListing" placeholder="Search by title, city..." class="w-64 bg-black border-yellow-500 rounded-full">
+        </div>
+        <div id="adsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </div>
+    </div>
 
-            const status = document.getElementById('status');
-            const downloadBtn = document.getElementById('downloadBtn');
-            const genBtn = document.getElementById('genBtn');
-            const progressContainer = document.getElementById('progressContainer');
-            const progressBar = document.getElementById('progressBar');
+    <!-- PAGE 4 – Post Ad -->
+    <div class="swiper-slide overflow-y-auto p-4">
+      <div class="max-w-2xl mx-auto glass-card p-6">
+        <h2 class="text-3xl font-bold gradient-text mb-4">📝 Post Your Ad</h2>
+        <form id="postAdForm">
+          <div class="mb-3"><label>📍 Location (State | District | City)*</label><input type="text" id="adLocationDisplay" placeholder="Select from page 2" readonly class="bg-gray-800 cursor-pointer" onclick="swiper.slideTo(1)"></div>
+          <div class="mb-3"><label>📢 Title*</label><input type="text" id="adTitle" placeholder="e.g., CASH PAY ❤️ Premium Companion" required></div>
+          <div class="mb-3"><label>📄 Description*</label><textarea id="adDesc" rows="3" placeholder="Describe yourself, services, what you like..." required></textarea></div>
+          <div class="grid grid-cols-2 gap-3 mb-3">
+            <select id="adGender" required><option value="">Gender</option><option>Female</option><option>Male</option><option>Trans</option></select>
+            <input type="number" id="adAge" placeholder="Age" required>
+            <input type="text" id="adNationality" placeholder="Nationality" required>
+            <input type="text" id="adEthnicity" placeholder="Ethnicity" required>
+          </div>
+          <div class="mb-3"><label>📞 Phone*</label><input type="tel" id="adPhone" required></div>
+          <div class="mb-3"><label>💬 WhatsApp</label><input type="text" id="adWhatsapp"></div>
+          <div class="mb-3"><label>📸 Upload Images (min 2, up to 8)</label>
+            <div id="uploadArea" class="border-2 border-dashed border-yellow-500 rounded-xl p-4 text-center cursor-pointer bg-black/50"><i class="fas fa-cloud-upload-alt text-2xl"></i><p>Click to select</p><input type="file" id="imageInput" multiple accept="image/*" style="display:none"></div>
+            <div id="imagePreview" class="flex flex-wrap gap-2 mt-3"></div>
+          </div>
+          <div class="flex gap-3 mt-4">
+            <button type="submit" class="btn-gold flex-1">Publish Ad</button>
+            <button type="button" onclick="swiper.slideTo(0)" class="bg-gray-700 flex-1 rounded-full">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
-            genBtn.disabled = true;
-            progressContainer.style.display = 'block';
-            
-            const steps = [
-                { text: '🎬 Initializing Video Engine...', p: 10 },
-                { text: '📝 Writing Script: "Laptop Manufacturing Process" (Hindi)...', p: 25 },
-                { text: '🎤 Synthesizing AI Voiceover (5:30 Duration)...', p: 45 },
-                { text: '🖼️ Rendering 22 High-Tech Component Visuals...', p: 65 },
-                { text: '🎨 Applying Dynamic Transitions & Background Music...', p: 85 },
-                { text: '⚙️ Final H.264 MP4 Encoding & Compression...', p: 95 },
-                { text: '✅ SUCCESS: 5:30 Min Video Generated (52.4 MB)', p: 100 }
-            ];
+    <!-- PAGE 5 – My Ads -->
+    <div class="swiper-slide overflow-y-auto p-4">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold gradient-text mb-4">📌 My Ads</h2>
+        <div id="myAdsContainer" class="grid grid-cols-1 md:grid-cols-2 gap-5"></div>
+      </div>
+    </div>
 
-            for (const step of steps) {
-                status.textContent = step.text;
-                progressBar.style.width = step.p + '%';
-                // Artificial delay for realism
-                await new Promise(r => setTimeout(r, 1500 + Math.random() * 1000));
-            }
+    <!-- PAGE 6 – Testimonials -->
+    <div class="swiper-slide overflow-y-auto p-4">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-4xl font-bold gradient-text mb-2">Client Reviews</h2>
+        <div id="testimonialsGrid" class="grid md:grid-cols-2 gap-6 mt-8"></div>
+        <button id="addReviewBtn" class="mt-8 text-yellow-500 border border-yellow-500 rounded-full px-6 py-2">+ Leave a Review</button>
+      </div>
+    </div>
 
-            status.style.borderColor = "#10b981";
-            status.style.color = "#10b981";
-            status.style.background = "rgba(16, 185, 129, 0.1)";
-            downloadBtn.disabled = false;
-            isGenerating = false;
-        }
+    <!-- PAGE 7 – Gallery (Premium Female Images) -->
+    <div class="swiper-slide overflow-y-auto p-4">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold gradient-text text-center mb-6">📸 Premium Gallery</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="galleryGrid"></div>
+      </div>
+    </div>
 
-        function downloadVideo() {
-            // Simulated Video Blob (52MB of dummy data for demonstration)
-            const videoBlob = new Blob([new Uint8Array(52 * 1024 * 1024)], { type: 'video/mp4' });
-            const url = URL.createObjectURL(videoBlob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'How-to-Make-Laptop-Hindi-Full.mp4';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
+    <!-- PAGE 8 – Contact & FAQ -->
+    <div class="swiper-slide overflow-y-auto p-4">
+      <div class="max-w-4xl mx-auto glass-card p-6">
+        <h2 class="text-3xl font-bold gradient-text">Get Support</h2>
+        <form id="contactForm" class="mt-4 space-y-3">
+          <input type="text" id="contactName" placeholder="Your name" required>
+          <input type="email" id="contactEmail" placeholder="Email" required>
+          <textarea rows="3" id="contactMsg" placeholder="Message" required></textarea>
+          <button type="submit" class="btn-gold w-full">Send Message</button>
+        </form>
+        <div class="mt-6 pt-4 border-t border-yellow-500/30">
+          <h3 class="font-bold text-xl">❓ FAQ</h3>
+          <details class="mt-2"><summary>How to post an ad?</summary><p>Go to page 4, select location from page 2 first, fill details, upload 2+ images.</p></details>
+          <details><summary>Is it free?</summary><p>Yes, 100% free platform.</p></details>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
 
-            setTimeout(() => {
-                alert('✅ DOWNLOAD STARTED!\n\nFile: How-to-Make-Laptop-Hindi-Full.mp4\nSize: 52MB\nDuration: 5:30 Min\n\nVideo is ready to play in any media player.');
-            }, 500);
-        }
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  // ======================= INDIAN LOCATION DATA =======================
+  const locationData = {
+    "Uttar Pradesh": { "Lucknow": ["Lucknow City", "Gomti Nagar", "Aliganj"], "Agra": ["Agra Cantt", "Fatehabad Road", "Dayal Bagh"], "Noida": ["Sector 18", "Sector 62", "Greater Noida"] },
+    "Maharashtra": { "Mumbai": ["Andheri", "Bandra", "Juhu", "Dadar"], "Pune": ["Koregaon Park", "Shivaji Nagar", "Viman Nagar"], "Nagpur": ["Dharampeth", "Sadar"] },
+    "Delhi": { "New Delhi": ["Connaught Place", "Karol Bagh", "South Extension", "Paharganj"] },
+    "Karnataka": { "Bangalore": ["Indiranagar", "Koramangala", "Whitefield", "MG Road"] },
+    "Tamil Nadu": { "Chennai": ["T Nagar", "Anna Nagar", "Adyar"], "Coimbatore": ["RS Puram", "Gandhipuram"] },
+    "West Bengal": { "Kolkata": ["Park Street", "Salt Lake", "Howrah"] },
+    "Rajasthan": { "Jaipur": ["MI Road", "C Scheme", "Jhotwara"] }
+  };
+  function populateStates() {
+    const stateSelect = document.getElementById("stateSelect");
+    stateSelect.innerHTML = '<option value="">Select State</option>';
+    Object.keys(locationData).forEach(state => { stateSelect.innerHTML += `<option value="${state}">${state}</option>`; });
+  }
+  document.getElementById("stateSelect").addEventListener("change", function() {
+    const state = this.value;
+    const districtSelect = document.getElementById("districtSelect");
+    districtSelect.disabled = !state;
+    districtSelect.innerHTML = '<option value="">Select District</option>';
+    if (state && locationData[state]) {
+      Object.keys(locationData[state]).forEach(dist => { districtSelect.innerHTML += `<option value="${dist}">${dist}</option>`; });
+    }
+  });
+  document.getElementById("districtSelect").addEventListener("change", function() {
+    const state = document.getElementById("stateSelect").value;
+    const district = this.value;
+    const citySelect = document.getElementById("citySelect");
+    citySelect.disabled = !district;
+    citySelect.innerHTML = '<option value="">Select City</option>';
+    if (state && district && locationData[state] && locationData[state][district]) {
+      locationData[state][district].forEach(city => { citySelect.innerHTML += `<option value="${city}">${city}</option>`; });
+    }
+  });
+  let selectedLocation = "";
+  document.getElementById("applyLocationBtn").addEventListener("click", () => {
+    const state = document.getElementById("stateSelect").value;
+    const district = document.getElementById("districtSelect").value;
+    const city = document.getElementById("citySelect").value;
+    if (city) selectedLocation = `${state} | ${district} | ${city}`;
+    else if (district) selectedLocation = `${state} | ${district}`;
+    else selectedLocation = state;
+    document.getElementById("adLocationDisplay").value = selectedLocation;
+    document.getElementById("searchListing").value = city || district || state;
+    renderAds();
+    swiper.slideTo(2);
+    showToast(`Location set: ${selectedLocation}`);
+  });
+
+  // ======================= DATA MODELS =======================
+  let ads = JSON.parse(localStorage.getItem("cashoo_ads")) || [];
+  let testimonials = JSON.parse(localStorage.getItem("cashoo_testimonials")) || [
+    { name: "Riya S.", text: "Very genuine platform. Got great response." },
+    { name: "Neha K.", text: "Easy to use and support is awesome." }
+  ];
+  let currentUser = JSON.parse(localStorage.getItem("cashoo_user")) || null;
+
+  // 10 High-Quality Female Images (Realistic, safe)
+  const galleryImages = [
+    "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg",
+    "https://images.pexels.com/photos/2380794/pexels-photo-2380794.jpeg",
+    "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
+    "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg",
+    "https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg",
+    "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg",
+    "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg",
+    "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg",
+    "https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg",
+    "https://images.pexels.com/photos/2101834/pexels-photo-2101834.jpeg"
+  ];
+
+  function showToast(msg) {
+    const toast = document.getElementById("toastMsg");
+    toast.innerText = msg;
+    toast.style.display = "block";
+    setTimeout(() => toast.style.display = "none", 3000);
+  }
+  function saveData() {
+    localStorage.setItem("cashoo_ads", JSON.stringify(ads));
+    localStorage.setItem("cashoo_testimonials", JSON.stringify(testimonials));
+    if (currentUser) localStorage.setItem("cashoo_user", JSON.stringify(currentUser));
+    else localStorage.removeItem("cashoo_user");
+    refreshAll();
+  }
+  if (ads.length === 0) {
+    ads = [
+      { id: "a1", userId: "demo", title: "CASH PAY ❤️ Premium Companion", location: "Delhi | New Delhi | Connaught Place", description: "Independent model, 5 star service. Real meet.", gender: "Female", age: "25", nationality: "Indian", ethnicity: "Asian", phone: "+91 9876543210", whatsapp: "9876543210", images: [galleryImages[0]], status: "active", createdAt: Date.now(), deadline: "30 Jun 2025" },
+      { id: "a2", userId: "demo", title: "Luxury High Class", location: "Maharashtra | Mumbai | Bandra", description: "Elite experience, verified.", gender: "Female", age: "27", nationality: "Indian", ethnicity: "South Indian", phone: "+91 9988776655", whatsapp: "9988776655", images: [galleryImages[1]], status: "active", createdAt: Date.now(), deadline: "15 Jul 2025" }
+    ];
+    saveData();
+  }
+
+  function refreshAll() {
+    renderAds();
+    renderMyAds();
+    renderTestimonials();
+    renderGallery();
+    updateUserStatus();
+  }
+  function renderAds() {
+    const container = document.getElementById("adsContainer");
+    if (!container) return;
+    let filtered = [...ads];
+    const search = document.getElementById("searchListing")?.value.toLowerCase() || "";
+    if (search) filtered = filtered.filter(a => a.title.toLowerCase().includes(search) || a.location.toLowerCase().includes(search));
+    if (selectedLocation && !search) filtered = filtered.filter(a => a.location.toLowerCase().includes(selectedLocation.toLowerCase()));
+    if (filtered.length === 0) { container.innerHTML = "<div class='col-span-full text-center py-10'>No ads found. Post your ad → page 4</div>"; return; }
+    container.innerHTML = filtered.map(ad => `
+      <div class="ad-card p-4">
+        <img src="${ad.images[0] || galleryImages[0]}" class="w-full h-56 object-cover rounded-xl">
+        <h3 class="text-xl font-bold mt-2">${escapeHtml(ad.title)}</h3>
+        <p class="text-sm text-gray-300"><i class="fas fa-map-marker-alt"></i> ${escapeHtml(ad.location)}</p>
+        <div class="flex justify-between mt-2 text-xs"><span class="text-green-400">🟢 ACTIVE</span><span>📅 ${ad.deadline || "30 days"}</span></div>
+        <div class="mt-3 flex gap-2">
+          <button onclick="viewAd('${ad.id}')" class="bg-yellow-600 text-black text-sm py-1 px-3 rounded-full w-full">View Details</button>
+          ${currentUser && currentUser.id === ad.userId ? `<button onclick="deleteAd('${ad.id}')" class="bg-red-600 text-sm py-1 px-3 rounded-full">Delete</button>` : ''}
+        </div>
+      </div>
+    `).join('');
+  }
+  window.viewAd = (id) => {
+    const ad = ads.find(a => a.id === id);
+    if (!ad) return;
+    showToast(`📞 Contact: ${ad.phone} | WhatsApp: ${ad.whatsapp || "N/A"} | Age: ${ad.age} | ${ad.description.substring(0, 100)}`);
+  };
+  window.deleteAd = (id) => {
+    if (confirm("Delete this ad permanently?")) {
+      ads = ads.filter(a => a.id !== id);
+      saveData();
+      showToast("Ad deleted");
+    }
+  };
+  function renderMyAds() {
+    const container = document.getElementById("myAdsContainer");
+    if (!container) return;
+    if (!currentUser) { container.innerHTML = "<div class='col-span-full text-center py-10'>🔒 Login to see your ads</div>"; return; }
+    const my = ads.filter(a => a.userId === currentUser.id);
+    if (my.length === 0) { container.innerHTML = "<div class='col-span-full text-center py-10'>No ads yet. Post now on page 4</div>"; return; }
+    container.innerHTML = my.map(ad => `
+      <div class="glass-card p-3 flex gap-3 items-center">
+        <img src="${ad.images[0]}" class="w-16 h-16 rounded-lg object-cover">
+        <div class="flex-1"><h3 class="font-bold">${escapeHtml(ad.title)}</h3><p>${ad.location}</p><button onclick="deleteAd('${ad.id}')" class="text-red-400 text-sm">Delete</button></div>
+      </div>
+    `).join('');
+  }
+  function renderTestimonials() {
+    const grid = document.getElementById("testimonialsGrid");
+    if (!grid) return;
+    grid.innerHTML = testimonials.map(t => `<div class="glass-card p-4"><i class="fas fa-quote-left text-yellow-500"></i><p class="mt-2">“${escapeHtml(t.text)}”</p><div class="mt-3 font-bold">- ${escapeHtml(t.name)}</div></div>`).join('');
+  }
+  function renderGallery() {
+    const grid = document.getElementById("galleryGrid");
+    if (!grid) return;
+    grid.innerHTML = galleryImages.map(url => `<div class="rounded-xl overflow-hidden h-56 card-3d"><img src="${url}" class="w-full h-full object-cover hover:scale-105 transition duration-500"></div>`).join('');
+  }
+  function updateUserStatus() {
+    const statusSpan = document.getElementById("userStatus");
+    const loginBtn = document.getElementById("loginBtn");
+    const logoutBtn = document.getElementById("logoutBtn");
+    if (currentUser) {
+      statusSpan.innerText = `👋 ${currentUser.name}`;
+      loginBtn.classList.add("hidden");
+      logoutBtn.classList.remove("hidden");
+    } else {
+      statusSpan.innerText = "Guest";
+      loginBtn.classList.remove("hidden");
+      logoutBtn.classList.add("hidden");
+    }
+  }
+  function promptLogin() {
+    const name = prompt("Enter your name (demo login)");
+    if (name && name.trim()) {
+      currentUser = { id: "user_" + Date.now(), name: name.trim() };
+      saveData();
+      showToast(`Welcome ${name}! You can now post ads.`);
+    }
+  }
+  document.getElementById("loginBtn").onclick = promptLogin;
+  document.getElementById("logoutBtn").onclick = () => { currentUser = null; saveData(); showToast("Logged out"); };
+
+  // Post ad image upload
+  let uploadedImages = [];
+  const uploadArea = document.getElementById("uploadArea");
+  const fileInput = document.getElementById("imageInput");
+  uploadArea.onclick = () => fileInput.click();
+  fileInput.addEventListener("change", (e) => {
+    const files = Array.from(e.target.files);
+    if (uploadedImages.length + files.length > 8) { showToast("Max 8 images"); return; }
+    files.forEach(file => {
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        uploadedImages.push(ev.target.result);
+        renderImagePreviews();
+      };
+      reader.readAsDataURL(file);
+    });
+    fileInput.value = "";
+  });
+  function renderImagePreviews() {
+    const preview = document.getElementById("imagePreview");
+    preview.innerHTML = uploadedImages.map((img, idx) => `<div style="position:relative;"><img src="${img}" class="w-16 h-16 rounded-lg border border-yellow-500 object-cover"><div class="absolute -top-2 -right-2 bg-red-500 rounded-full w-5 h-5 flex items-center justify-center text-xs cursor-pointer" onclick="removeImage(${idx})">✕</div></div>`).join('');
+  }
+  window.removeImage = (idx) => { uploadedImages.splice(idx, 1); renderImagePreviews(); };
+
+  document.getElementById("postAdForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (!currentUser) { showToast("Please login first"); promptLogin(); return; }
+    if (!selectedLocation) { showToast("Please select location from page 2 first"); swiper.slideTo(1); return; }
+    if (uploadedImages.length < 2) { showToast("Upload at least 2 images"); return; }
+    const title = document.getElementById("adTitle").value;
+    const desc = document.getElementById("adDesc").value;
+    const gender = document.getElementById("adGender").value;
+    const age = document.getElementById("adAge").value;
+    const nationality = document.getElementById("adNationality").value;
+    const ethnicity = document.getElementById("adEthnicity").value;
+    const phone = document.getElementById("adPhone").value;
+    const whatsapp = document.getElementById("adWhatsapp").value;
+    if (!title || !desc || !gender || !age || !nationality || !phone) { showToast("Fill all mandatory fields"); return; }
+    const newAd = {
+      id: Date.now().toString(),
+      userId: currentUser.id,
+      title, location: selectedLocation, description: desc, gender, age, nationality, ethnicity, phone, whatsapp,
+      images: uploadedImages.slice(),
+      status: "active", createdAt: Date.now(), deadline: new Date(Date.now() + 30*86400000).toLocaleDateString('en-GB')
+    };
+    ads.push(newAd);
+    uploadedImages = [];
+    renderImagePreviews();
+    saveData();
+    showToast("Ad posted!");
+    document.getElementById("postAdForm").reset();
+    selectedLocation = "";
+    document.getElementById("adLocationDisplay").value = "";
+    swiper.slideTo(2);
+  });
+
+  document.getElementById("addReviewBtn").onclick = () => {
+    const name = prompt("Your name");
+    const text = prompt("Your review");
+    if (name && text) { testimonials.push({ name, text }); saveData(); showToast("Thanks!"); }
+  };
+  document.getElementById("contactForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    showToast("Message sent (demo)");
+    e.target.reset();
+  });
+  document.getElementById("searchListing").addEventListener("input", () => renderAds());
+  document.getElementById("exploreBtn").onclick = () => swiper.slideTo(2);
+  document.getElementById("postAdHeroBtn").onclick = () => swiper.slideTo(3);
+
+  function escapeHtml(str) { if(!str) return ""; return str.replace(/[&<>]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[m])); }
+
+  populateStates();
+  const swiper = new Swiper(".mySwiper", { direction: "horizontal", slidesPerView: 1, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }, pagination: { el: ".swiper-pagination", clickable: true }, keyboard: true, speed: 400 });
+  window.swiper = swiper;
+  refreshAll();
+</script>
 </body>
 </html>
+```
